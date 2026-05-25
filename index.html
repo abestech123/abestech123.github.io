@@ -7,43 +7,189 @@ HTML
     <title>Hardware Heroes 2.0</title>
 
     <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
         body{
             background:#0d1117;
             color:white;
-            font-family:Arial;
-            text-align:center;
-            padding-top:100px;
         }
 
-        h1{
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            background:#161b22;
+            position:sticky;
+            top:0;
+        }
+
+        header h1{
             color:#58a6ff;
-            font-size:50px;
         }
 
-        p{
-            font-size:20px;
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            transition:0.3s;
         }
 
-        button{
-            padding:15px 30px;
+        nav a:hover{
+            color:#58a6ff;
+        }
+
+        .hero{
+            height:90vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+            background:linear-gradient(to right,#0d1117,#161b22);
+        }
+
+        .hero h2{
+            font-size:60px;
+            color:#58a6ff;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:22px;
+            max-width:700px;
+            line-height:1.6;
+            margin-bottom:30px;
+        }
+
+        .hero button{
+            padding:15px 35px;
             border:none;
             border-radius:10px;
             background:#238636;
             color:white;
             font-size:18px;
             cursor:pointer;
+            transition:0.3s;
         }
+
+        .hero button:hover{
+            transform:scale(1.05);
+            background:#2ea043;
+        }
+
+        .services{
+            padding:80px 10%;
+            text-align:center;
+        }
+
+        .services h2{
+            font-size:40px;
+            margin-bottom:50px;
+            color:#58a6ff;
+        }
+
+        .service-boxes{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .box{
+            background:#161b22;
+            padding:30px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .box:hover{
+            transform:translateY(-10px);
+        }
+
+        .box h3{
+            margin-bottom:15px;
+            color:#58a6ff;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            background:#161b22;
+            margin-top:50px;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <h1>HARDWARE HEROES 2.0</h1>
+    <header>
+        <h1>Hardware Heroes 2.0</h1>
 
-    <p>Innovative Tech Solutions & Creative Digital Crafts</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <button onclick="alert('Welcome to Hardware Heroes 2.0')">
-        Explore
-    </button>
+    <section class="hero">
+
+        <h2>Innovative Tech Solutions</h2>
+
+        <p>
+            Hardware Heroes 2.0 delivers modern hardware diagnostics,
+            software solutions, digital innovation, and technology support
+            for computers and mobile devices.
+        </p>
+
+        <button onclick="alert('Welcome to Hardware Heroes 2.0')">
+            Explore Services
+        </button>
+
+    </section>
+
+    <section class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-boxes">
+
+            <div class="box">
+                <h3>Computer Repair</h3>
+                <p>Professional troubleshooting and repair solutions.</p>
+            </div>
+
+            <div class="box">
+                <h3>Hardware Diagnostics</h3>
+                <p>Advanced system and hardware detection tools.</p>
+            </div>
+
+            <div class="box">
+                <h3>Software Installation</h3>
+                <p>Fast and secure software setup and maintenance.</p>
+            </div>
+
+            <div class="box">
+                <h3>Tech Consultation</h3>
+                <p>Expert guidance for modern digital solutions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Hardware Heroes 2.0 | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
