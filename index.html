@@ -32,7 +32,18 @@ HTML
 
         header h1{
             color:#58a6ff;
-        }
+        }.logo-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
 
         nav a{
             color:white;
@@ -131,7 +142,10 @@ HTML
 <body>
 
     <header>
-        <h1>Hardware Heroes 2.0</h1>
+        <div class="logo-container">
+    <img src="HH LOGO.jpg" alt="Hardware Heroes Logo" class="logo">
+    <h1>Hardware Heroes 2.0</h1>
+</div>
 
         <nav>
             <a href="#">Home</a>
@@ -182,8 +196,6 @@ HTML
                 <h3>Tech Consultation</h3>
                 <p>Expert guidance for modern digital solutions.</p>
             </div>
-
-        </div>
 
     </section>
 
