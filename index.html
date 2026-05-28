@@ -152,13 +152,52 @@ HTML
             margin-bottom:15px;
             color:#58a6ff;
         }
-
-        footer{
+        
+         footer{
             text-align:center;
             padding:30px;
             background:#161b22;
             margin-top:50px;
         }
+        .why{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.why h2{
+    font-size:40px;
+    color:#58a6ff;
+    margin-bottom:40px;
+}
+
+.why-boxes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.why-box{
+    background:#161b22;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.why-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(88,166,255,0.5);
+}
+
+.why-box h3{
+    color:#58a6ff;
+    margin-bottom:15px;
+}
+footer{
+    text-align:center;
+    padding:30px;
+    background:#161b22;
+    margin-top:50px;
+}
 
     </style>
 </head>
@@ -235,6 +274,35 @@ HTML
 
     </section>
 
+    <section class="why">
+
+    <h2>Why Choose Us</h2>
+
+    <div class="why-boxes">
+
+        <div class="why-box">
+            <h3>Fast Service</h3>
+            <p>Quick and reliable support for computers and phones.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>Trusted Solutions</h3>
+            <p>Professional software and hardware troubleshooting.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>Modern Technology</h3>
+            <p>Innovative digital solutions for modern devices.</p>
+        </div>
+
+        <div class="why-box">
+            <h3>Customer Support</h3>
+            <p>Friendly assistance and reliable technical guidance.</p>
+        </div>
+
+    </div>
+
+</section>
     <footer>
         <p>© 2026 Hardware Heroes 2.0 | All Rights Reserved</p>
     </footer>
