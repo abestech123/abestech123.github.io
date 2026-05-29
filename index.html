@@ -32,6 +32,7 @@ HTML
             background:#161b22;
             position:sticky;
             top:0;
+            z-index:1000;
         }
         .about{
     padding:80px 10%;
@@ -64,8 +65,8 @@ HTML
 
         nav a:hover{
     color:#58a6ff;
-    text-shadow:0 0 10px #58a6ff;
-}
+    text-shadow:0 0 10px rgba(88,166,255,0.8);
+  }
 
         .hero{
             height:90vh;
@@ -75,7 +76,7 @@ HTML
             align-items:center;
             text-align:center;
             padding:20px;
-            background:linear-gradient(to right,#0d1117,#161b22);
+            background:linear-gradient(135deg,#0d1117,#161b22,#1f2937);
         }
 
         .hero h2{
@@ -83,6 +84,7 @@ HTML
             color:#58a6ff;
             margin-bottom:20px;
             text-shadow:0 0 20px rgba(88,166,255,0.7);
+            animation:floatText 3s ease-in-out infinite;
         }
         .about h2{
     font-size:40px;
@@ -151,6 +153,7 @@ HTML
 
         .box:hover{
             transform:translateY(-10px);
+            box-shadow:0 0 20px rgba(88,166,255,0.4);
         }
 
         .box h3{
@@ -214,6 +217,21 @@ footer{
     color:#58a6ff;
     margin-bottom:15px;
 }
+
+@keyframes floatText{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
 footer{
     text-align:center;
     padding:30px;
