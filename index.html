@@ -46,6 +46,11 @@ HTML
     letter-spacing:1px;
 }
             
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
 
 .logo{
     width:70px;
@@ -128,9 +133,7 @@ HTML
         .services{
             padding:80px 10%;
             text-align:center;
-        }
-        .services{
-}
+        }  
 
         .services h2{
             font-size:40px;
@@ -239,6 +242,29 @@ footer{
     margin-top:50px;
 }
 
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}        
+
     </style>
 </head>
 
@@ -311,8 +337,10 @@ footer{
                 <h3>Tech Consultation</h3>
                 <p>Expert guidance for modern digital solutions.</p>
             </div>
-
-    </section>
+            
+            </div>
+        
+            </section>
 
     <section class="why">
 
